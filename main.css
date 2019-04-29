@@ -1,0 +1,271 @@
+
+@import url("https://fonts.googleapis.com/css?family=Creepster|Rakkas|Noto+Serif|Space+Mono");
+
+
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  float: left;
+  margin: 0 1rem;
+  line-height: 4rem;
+  color: #0a0024;
+}
+
+h2 {
+  font-family: "Rakkas", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 5.5rem;
+  margin: 2rem;
+  /* text-shadow: 0px 4px 0px rgba(222, 77, 58, 0.3); */
+}
+
+h2 a {
+  text-decoration: none;
+  color: #e3db96;
+  text-shadow: none;
+  display: inline-block;
+}
+
+#city::after {
+  content: "∟";
+  font-size: 3rem;
+  display: inline-block;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -12px;
+  left: 10px;
+}
+
+header {
+  height: 4rem;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+}
+
+nav li {
+  display: block;
+  float: left;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #0a0024;
+  line-height: 4rem;
+  padding: 0 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+nav a:hover {
+  color: #71acf4;
+  background: #f8f8f8;
+  box-shadow: inset 0px -3px 0px 0px #71acf4;
+  transition: box-shadow 0.3s ease;
+}
+
+section.hero {
+  padding: 6rem;
+  background: #dff1c6;
+  color: #71acf4;
+  text-align: center;
+  margin-top: 4rem;
+  /* background-image: url("images/globie.png"); */
+  background-position: 25%;
+  background-size: 100%;
+  /* background-blend-mode: screen; */
+}
+
+.content {
+  background: #f4f4f4;
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .info {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.info h3 {
+  color: #71acf4;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info .new {
+  display: block;
+  color: #e3db96;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  font-family: "Creepster", cursive;
+  position: absolute;
+  top: 16px;
+  right: -58px;
+  background: #0a0024;
+  padding: .25rem 4rem;
+  transform: rotate(45deg);
+}
+
+.info address {
+  font-style: normal;
+  font-family: 'Space Mono', monospace;
+  font-size: .9rem;
+  color: #828282;
+}
+
+.info p {
+  line-height: 1.45rem;
+  color: #323232;
+}
+
+.card .image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+}
+
+.card footer {
+  padding: 1rem;
+  border-top: solid 1px #e7e7e7;
+  overflow: hidden;
+}
+
+.card footer span {
+  display: block;
+  line-height: 40px;
+  padding: 0 1.5rem;
+  background: #f4f4f4;
+  float: left;
+  border-radius: 20px;
+  color: #0a0024;
+}
+
+.card footer .button {
+  text-decoration: none;
+  display: inline-block;
+  background: #fff;
+  line-height: 40px;
+  color: #71acf4;
+  border: none;
+  padding: 0 0.75rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  box-shadow: inset 0px 0px 0px 1px #71acf4;
+  transition: all .3s ease;
+}
+
+.card footer .button:hover {
+  box-shadow: inset 0px 0px 0px 3px #71acf4;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.card footer .disabled {
+  box-shadow: none;
+  background: #eaeaea;
+  color: #a9a9a9;
+}
+
+.card footer .disabled:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.post img {
+    width: 70%;
+    margin: 4rem;
+    box-shadow: 0px 0px 0px 10px rgba(255,255,255,1), 0px 10px 20px 10px rgba(0,0,0,.2) ;
+}
+
+.post p {
+    color: #242424;
+    font-family: serif;
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 0 25% 2rem 25%;
+    text-align: left;
+    line-height: 1.4;
+}
+
+p .leader {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #71acf4;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.post p:last-of-type::last-word::after {
+    content: "";
+    display: inline-block;
+    background: #71acf4;
+    height: .5rem;
+    width: .5rem;
+}
+
+
+.globie {
+    width: 40%;
+}
+
+#link-back .button {
+    text-decoration: none;
+    display: block;
+    margin: 4rem auto;
+    background: #fff;
+    line-height: 40px;
+    color: #71acf4;
+    border: none;
+    padding: 2rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    box-shadow: inset 0px 0px 0px 1px #71acf4;
+    transition: all .3s ease;
+    width: 40%;
+    text-align: center;
+}
+
+#link-back .button:hover {
+    box-shadow: inset 0px 0px 0px 3px #71acf4;
+    background: #eef6ff;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
