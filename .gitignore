@@ -1,0 +1,11 @@
+# Project dependencies
+.env.*
+.env*
+.env.production
+.env.development
+.env
+.vscode
+
+# Build directory
+/public
+.DS_Store
